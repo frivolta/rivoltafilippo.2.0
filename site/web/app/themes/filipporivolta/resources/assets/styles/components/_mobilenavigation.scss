@@ -1,0 +1,16 @@
+.mobile-navigation {
+  display: none;
+  visibility: hidden;
+
+  &.isVisible {
+    visibility: visible;
+  }
+
+  .navigation__nav {
+    display: block;
+
+    li {
+      display: block;
+    }
+  }
+}

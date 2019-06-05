@@ -3,6 +3,12 @@
 /** Import everything from autoload */
 @import "./autoload/**/*";
 
+/** Import Third Party */
+@import "~swiper/src/swiper.scss";
+// Import Slick
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.scss";
+
 /**
  * Import npm dependencies
  *
@@ -12,14 +18,23 @@
 // @import "~some-node-module";
 
 /** Import theme styles */
+@import "common/mixins";
+@import "utilities/spacing";
+@import "common/typography";
 @import "common/global";
 @import "components/buttons";
-@import "components/comments";
-@import "components/forms";
-@import "components/wp-classes";
 @import "layouts/header";
-@import "layouts/sidebar";
-@import "layouts/footer";
-@import "layouts/pages";
-@import "layouts/posts";
-@import "layouts/tinymce";
+@import "components/slider";
+@import "components/intro";
+@import "components/content";
+@import "components/about";
+@import "components/calltoaction";
+@import "components/contact";
+@import "components/mobilemenu";
+@import "components/timeline";
+@import "components/graphs";
+@import "components/swiper-container";
+@import "components/carousel-slider";
+@import "components/extras";
+@import "components/single";
+@import "components/404";

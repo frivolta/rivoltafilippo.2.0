@@ -1,0 +1,29 @@
+.slider {
+  padding: 120px 0;
+  text-align: center;
+
+  @include media-breakpoint-up(xs) {
+    padding: 80px 0 !important;
+  }
+
+  @include media-breakpoint-up(sm) {
+    padding: 120px 0 !important;
+  }
+
+  &__title {
+    color: $primary;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    padding-top: 8px;
+  }
+
+  &__arrow {
+    margin-top: 36px;
+
+    &__svg {
+      fill: $primary;
+    }
+  }
+}

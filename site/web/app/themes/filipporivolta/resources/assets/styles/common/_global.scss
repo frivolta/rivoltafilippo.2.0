@@ -1,0 +1,114 @@
+/**
+  * font-family: 'Montserrat', sans-serif;
+  * font-family: 'Open Sans', sans-serif;
+  */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.svg-light {
+  fill: $light;
+  transition: all 0.3s;
+}
+
+.primary-bg {
+  background-color: $primary;
+}
+
+.secondary-bg {
+  background-color: $altAlpha;
+}
+
+.dark-bg {
+  background-color: $secondary;
+}
+
+.light-text {
+  color: $light !important;
+}
+
+.std-color {
+  color: $text;
+}
+
+.alt-color {
+  color: $primary;
+}
+
+.light-grey-color {
+  color: $lightGrey;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-regular {
+  font-weight: 500;
+}
+
+.small-text {
+  font-size: 12px !important;
+}
+
+.text-16 {
+  font-size: 16px !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.separator {
+  position: relative;
+  display: block;
+  height: 1px;
+  width: 40%;
+  background-color: $light;
+}
+
+.border-subtitle {
+  position: relative;
+
+  @include media-breakpoint-up(xs) {
+    padding-left: 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-left: 30px;
+  }
+
+  &::before {
+    border-top: 1px solid;
+    content: "";
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 25px;
+    opacity: 0.7;
+
+    @include media-breakpoint-up(xs) {
+      display: none;
+    }
+
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+  }
+}
+
+.list-bullet {
+  padding-right: 10px;
+}

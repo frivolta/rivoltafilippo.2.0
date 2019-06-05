@@ -1,0 +1,30 @@
+.button {
+  font-family: $montserrat;
+
+  &--black {
+    background-color: $dark;
+    color: $light;
+
+    &:hover {
+      background: $light;
+    }
+  }
+
+  &--primary {
+    background-color: $primary;
+    color: $light;
+
+    &:hover {
+      background: $dark;
+      color: $light;
+    }
+  }
+
+  &--small {
+    padding: 12px 32px;
+  }
+
+  &--medium {
+    padding: 15px 42px;
+  }
+}

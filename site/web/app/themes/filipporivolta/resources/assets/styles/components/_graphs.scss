@@ -1,0 +1,13 @@
+.graphs {
+  padding: 74px 0;
+
+  &__image {
+    @include media-breakpoint-up(xs) {
+      max-width: 90%;
+    }
+
+    @include media-breakpoint-up(md) {
+      max-width: 600px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.carousel-slider {
+  margin-top: -74px;
+
+  &__item {
+    &__image {
+      @include media-breakpoint-up(xs) {
+        width: 90%;
+      }
+
+      @include media-breakpoint-up(md) {
+        width: 650px;
+      }
+
+      margin: 0 auto;
+      box-shadow: 5px 17px 51px -13px rgba(0, 0, 0, 0.57);
+      margin-bottom: 74px;
+    }
+  }
+}

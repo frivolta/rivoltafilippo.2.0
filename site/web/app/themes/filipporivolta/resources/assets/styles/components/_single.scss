@@ -1,0 +1,24 @@
+.container--article {
+  max-width: 850px;
+  overflow: hidden;
+}
+
+.post {
+  margin-top: 48px;
+
+  &__thumb {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__title {
+    margin-top: 36px;
+  }
+
+  &__content {
+    margin-top: 24px;
+    margin-bottom: 74px;
+  }
+}

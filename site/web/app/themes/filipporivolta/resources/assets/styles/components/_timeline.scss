@@ -1,0 +1,41 @@
+.timeline {
+  padding-top: 74px;
+  padding-bottom: 74px;
+  flex-direction: row;
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
+
+  &__item {
+    background-color: $primary;
+    flex: 1 1 0;
+    text-align: center;
+    margin: 0 8px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-top: 36px;
+    box-shadow: 5px 17px 51px -13px rgba(0, 0, 0, 0.57);
+
+    @include media-breakpoint-down(md) {
+      margin: 18px 0;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    &--inactive {
+      opacity: 0.5;
+    }
+  }
+}

@@ -130,3 +130,26 @@ add_action('after_setup_theme', function () {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
 });
+
+
+/**
+ * Acf Options Page
+ */
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
+
+/**
+ * Acf Remove p tags
+ */
+function the_field_without_filters( $the_field=null ) {
+    remove_filter('acf_the_content', 'wpautop');
+    if( $the_field ) {
+      the_field( $the_field );
+    } else {
+      the_field();
+    }
+    add_filter('acf_the_content', 'wpautop');
+}

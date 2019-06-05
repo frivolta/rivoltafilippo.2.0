@@ -1,0 +1,23 @@
+.swiper-container {
+  margin-top: -74px;
+  padding-bottom: 74px;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 74px;
+    padding-bottom: 74px;
+  }
+}
+
+.swiper-slide {
+  box-shadow: 5px 17px 51px -13px rgba(0, 0, 0, 0.57);
+
+  @include media-breakpoint-up(xs) {
+    max-width: 250px;
+  }
+
+  img {
+    @include media-breakpoint-up(xs) {
+      max-width: 250px;
+    }
+  }
+}

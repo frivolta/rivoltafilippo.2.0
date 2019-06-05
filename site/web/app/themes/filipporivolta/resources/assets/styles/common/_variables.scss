@@ -1,5 +1,30 @@
-/** Colors */
-$brand-primary:         #525ddc;
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
 
-/** Box Model  */
-$spacer:                2rem;
+// Slick Carousel font path
+$slick-font-path: "~slick-carousel/slick/fonts/";
+
+// Slick Carousel ajax-loader.gif path
+$slick-loader-path: "~slick-carousel/slick/";
+
+$theme-colors: (
+  primary: #ff214f
+);
+$dark: #000;
+$primary: #ff214f;
+$alt: #738a94;
+$altAlpha: rgba(115, 138, 148, 0.15);
+$lightGrey: #b7b7b7;
+$text: #6f6f6f;
+$altText: #343f44;
+$secondary: #232323;
+$greyOne: #707070;
+$light: #fff;
+
+/** Font Families **/
+$montserrat: "Montserrat", sans-serif;
+$opensans: "Open Sans", sans-serif;
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;

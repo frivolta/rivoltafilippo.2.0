@@ -1,2 +1,61 @@
-// TODO: .banner .nav li {}
-// TODO: .banner .nav a {}
+.navigation {
+  &__nav {
+    margin-bottom: 0;
+    font-family: $montserrat;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    li {
+      list-style: none;
+      padding-left: 16px;
+      padding-right: 16px;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $light;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $greyOne;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
+
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}
+
+header {
+  background-color: $dark;
+}
+
+.logo {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.svg-social {
+  width: 25px;
+}
+
+.social {
+  border-left: 1px solid $greyOne;
+  margin-left: 16px;
+
+  &.no-border {
+    border-left: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,90 @@
+strong {
+  font-weight: bold;
+}
+
+a {
+  font-family: $opensans;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover {
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+}
+
+p {
+  font-family: $opensans;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: $montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+h5 {
+  font-family: $montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: $opensans;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: $altText;
+}
+
+h2 {
+  font-family: $montserrat;
+  font-weight: 300;
+
+  @include media-breakpoint-up(xs) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+h1 {
+  font-family: $montserrat;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 300;
+}
+
+.weight-300 {
+  font-weight: 300 !important;
+}
+
+.weight-400 {
+  font-weight: 400 !important;
+}
+
+.weight-500 {
+  font-weight: 500 !important;
+}
+
+.weight-600 {
+  font-weight: 600 !important;
+}
+
+.light-link {
+  color: $light;
+
+  &:hover {
+    color: $light;
+    opacity: 0.8;
+  }
+}

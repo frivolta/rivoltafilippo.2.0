@@ -30,4 +30,20 @@ class App extends Controller
         }
         return get_the_title();
     }
+
+    public function header_options()
+    {
+        return (object) array (
+            'logo_standard' => get_field('logo_standard','options'),
+        );
+    }
+
+    public function social_options()
+    {
+        return (object) array (
+            'linkedin' => get_field('linkedin','options'),
+            'instagram' => get_field('instagram','options'),
+            'facebook' => get_field('facebook','options'),
+        );
+    }
 }

@@ -1,0 +1,16 @@
+.content-area {
+  padding: 128px 0;
+  font-family: $opensans;
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    font-size: 14px;
+
+    &__meta {
+      font-size: 14px;
+    }
+  }
+}
