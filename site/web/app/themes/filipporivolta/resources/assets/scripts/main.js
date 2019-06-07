@@ -3,6 +3,8 @@ import 'jquery';
 
 // Import everything from autoload
 import './autoload/**/*';
+//Import Classes
+import StickyHeader from './StickyHeader';
 
 // import local dependencies
 import Router from './util/Router';
@@ -12,8 +14,6 @@ import aboutUs from './routes/about';
 
 //Import Slick Carousel
 import 'slick-carousel/slick/slick.min';
-
-
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -106,3 +106,6 @@ $('.carousel-slider').slick({
     },
   ],
 });
+
+/** Instantiate Classes */
+new StickyHeader ();
