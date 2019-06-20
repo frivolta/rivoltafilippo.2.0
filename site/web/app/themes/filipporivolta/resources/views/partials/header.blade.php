@@ -45,11 +45,11 @@
 <nav class="mobile-menu">
   <h4 class="mobile-menu__close">CLOSE</h4>
   <ul class="mobile-menu__list">
-    <li class="mobile-menu__item"><a href="#aboutme" class="mobile-menu__item__link">Home</a></li>
-    <li class="mobile-menu__item"><a href="#expertise" class="mobile-menu__item__link">Expertise</a></li>
-    <li class="mobile-menu__item"><a href="#blog" class="mobile-menu__item__link">Blog</a></li>
+    <li class="mobile-menu__item"><a href="https://rivoltafilippo.com/#aboutme" class="mobile-menu__item__link">Home</a></li>
+    <li class="mobile-menu__item"><a href="https://rivoltafilippo.com/#expertise" class="mobile-menu__item__link">Expertise</a></li>
+    <li class="mobile-menu__item"><a href="https://rivoltafilippo.com/#blog" class="mobile-menu__item__link">Blog</a></li>
     <li class="mobile-menu__item"><a href="/latest-project-budgety" class="mobile-menu__item__link">Latest Project</a></li>								
-    <li class="mobile-menu__item"><a href="#contact" class="mobile-menu__item__link">Contact</a></li>								
+    <li class="mobile-menu__item"><a href="https://rivoltafilippo.com/#contact" class="mobile-menu__item__link">Contact</a></li>								
   </ul>
 </nav>
 <!-- ./End Mobile Menu -->
