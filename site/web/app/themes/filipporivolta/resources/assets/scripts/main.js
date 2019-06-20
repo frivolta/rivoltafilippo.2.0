@@ -33,17 +33,24 @@ const state = {
   scrollIsLocked: false,
 }
 const mobileMenu = '.mobile-menu';
-const mobileMenuTrigger = '.mobileTrigger';
+//const mobileMenuTrigger = '.mobileTrigger';
 const activeClass = 'mobile-menu--open';
 const closeClass = 'mobile-menu__close';
+const hiddenClass = 'isHidden';
+const mobileTriggerOpen = '.mobileTriggerOpen';
+const mobileTriggerClose = '.mobileTriggerClose';
 const closeTrigger = document.querySelector(`.${closeClass}`);
 
 //Trigger Menu
 const triggerMenu = () => {
   if (document.querySelector(mobileMenu).classList.contains(activeClass)){
     document.querySelector(mobileMenu).classList.remove(activeClass);
+    document.querySelector(mobileTriggerOpen).classList.remove(hiddenClass);
+    document.querySelector(mobileTriggerClose).classList.add(hiddenClass);
   } else {
     document.querySelector(mobileMenu).classList.add(activeClass);
+    document.querySelector(mobileTriggerOpen).classList.add(hiddenClass);
+    document.querySelector(mobileTriggerClose).classList.remove(hiddenClass);
   }
   if(state.scrollIsLocked) {
     document.ontouchmove = (e)=>e.preventDefault();
@@ -57,11 +64,10 @@ const triggerMenu = () => {
 }
 
 // Event Listeners
-document.querySelector(mobileMenuTrigger).addEventListener ( 'click', (e)=> {
-  e.preventDefault(e)
+document.querySelector(mobileTriggerOpen).addEventListener ( 'click', ()=> {
   triggerMenu();
 })
-document.querySelector(mobileMenu).addEventListener ( 'click', ()=> {
+document.querySelector(mobileTriggerClose).addEventListener ( 'click', ()=> {
   triggerMenu();
 })
 

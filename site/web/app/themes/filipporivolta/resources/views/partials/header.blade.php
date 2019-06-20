@@ -34,7 +34,8 @@
         </a>
       @endif
     </div>
-    <div class="mobile-menu__trigger mobileTrigger">☰</div>
+    <div class="mobile-menu__trigger mobileTriggerOpen">☰</div>
+    <div class="mobile-menu__trigger mobileTriggerClose isHidden">✕</div>
     <!-- ./End Navigation -->
 
   </div>
