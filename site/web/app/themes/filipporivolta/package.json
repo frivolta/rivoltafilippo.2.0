@@ -82,6 +82,6 @@
     "popper.js": "^1.14.7",
     "production": "0.0.2",
     "slick-carousel": "^1.8.1",
-    "swiper": "^4.5.0"
+    "swiper": "^6.5.1"
   }
 }
